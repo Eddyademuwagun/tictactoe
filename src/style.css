@@ -1,4 +1,5 @@
 .boardContainer {
+  position: relative; /* creates stacking context */
   margin: 0;
   height: 600px;
   width: 600px;
@@ -25,4 +26,36 @@ body {
   width: 200px;
   height: 100%;
   border: 1px solid black;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.winMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: red;
+  font-size: 48px;
+  font-weight: bold;
+  z-index: 999;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.winMessage.show {
+  opacity: 1;
+  visibility: visible;
+}
+.player1Info,
+.player2Info {
+  height: 600px;
+  width: 100px;
+  padding: 50px;
 }

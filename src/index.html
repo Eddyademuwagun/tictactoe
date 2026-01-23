@@ -7,25 +7,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="player1Info">
+      Player1 Name:
+      <div id="player1name"></div>
+      <br /><br />
+      Player1 Score:
+    </div>
+
     <div class="boardContainer">
       <div class="row">
-        <div class="field" id="A1"></div>
-        <div class="field" id="A2"></div>
-        <div class="field" id="A3"></div>
+        <div class="field" id="A1" onclick="move(this)"></div>
+        <div class="field" id="A2" onclick="move(this)"></div>
+        <div class="field" id="A3" onclick="move(this)"></div>
       </div>
 
       <div class="row">
-        <div class="field" id="B1"></div>
-        <div class="field" id="B2"></div>
-        <div class="field" id="B3"></div>
+        <div class="field" id="B1" onclick="move(this)"></div>
+        <div class="field" id="B2" onclick="move(this)"></div>
+        <div class="field" id="B3" onclick="move(this)"></div>
       </div>
 
       <div class="row">
-        <div class="field" id="C1"></div>
-        <div class="field" id="C2"></div>
-        <div class="field" id="C3"></div>
+        <div class="field" id="C1" onclick="move(this)"></div>
+        <div class="field" id="C2" onclick="move(this)"></div>
+        <div class="field" id="C3" onclick="move(this)"></div>
       </div>
     </div>
+    <div class="player2Info">
+      Player2 Name:
+      <div id="player2name"></div>
+      <br /><br />
+      Player2 Score:
+    </div>
+    <div class="winMessage">You Won!</div>
     <script src="main.js"></script>
   </body>
 </html>
